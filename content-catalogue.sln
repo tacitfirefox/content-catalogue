@@ -3,7 +3,40 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31313.79
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "trapper-keeper", "trapper-keeper\trapper-keeper.csproj", "{63693080-6D59-405C-9772-D5E6252F1F3B}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".root", ".root", "{D9F07FCF-F7D6-4A85-8AAA-5FA73313F5E7}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		common.props = common.props
+		debugtarget.props = debugtarget.props
+		directory.build.props = directory.build.props
+		Directory.Build.targets = Directory.Build.targets
+		LICENSE = LICENSE
+		README.md = README.md
+		tacitfirefox.ruleset = tacitfirefox.ruleset
+		version.props = version.props
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "source", "source", "{64D79A25-C09C-44D4-8084-B3B918B375F1}"
+	ProjectSection(SolutionItems) = preProject
+		source\directory.build.props = source\directory.build.props
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{29EB00BF-EF5F-4F17-A76A-833166284256}"
+	ProjectSection(SolutionItems) = preProject
+		build\Cadru.Build.Tasks.dll = build\Cadru.Build.Tasks.dll
+		build\Cadru.DebugEcho.targets = build\Cadru.DebugEcho.targets
+		build\Cadru.GenerateAssemblyInfo.targets = build\Cadru.GenerateAssemblyInfo.targets
+		build\Cadru.ReleaseNotes.targets = build\Cadru.ReleaseNotes.targets
+		build\Cadru.VersionUpdate.targets = build\Cadru.VersionUpdate.targets
+		build\sourcelink.props = build\sourcelink.props
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "trapper-keeper", "source\trapper-keeper\trapper-keeper.csproj", "{EEB1DEAF-7224-4726-9CEA-37AF79BAE7D0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{78754AF0-1128-4100-B3FE-7925E960D911}"
+	ProjectSection(SolutionItems) = preProject
+		test\directory.build.props = test\directory.build.props
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,13 +44,16 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{63693080-6D59-405C-9772-D5E6252F1F3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{63693080-6D59-405C-9772-D5E6252F1F3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{63693080-6D59-405C-9772-D5E6252F1F3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{63693080-6D59-405C-9772-D5E6252F1F3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEB1DEAF-7224-4726-9CEA-37AF79BAE7D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEB1DEAF-7224-4726-9CEA-37AF79BAE7D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEB1DEAF-7224-4726-9CEA-37AF79BAE7D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEB1DEAF-7224-4726-9CEA-37AF79BAE7D0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EEB1DEAF-7224-4726-9CEA-37AF79BAE7D0} = {64D79A25-C09C-44D4-8084-B3B918B375F1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CC3494BA-5CA9-421E-B73E-B0BF5F2785CD}
