@@ -11,7 +11,7 @@ projects from the command-line or the IDE. -->
         $(Copyright)
   -->
   <PropertyGroup>
-    <Product>Modern Alchemy</Product>
+    <Product>Content Catalogue</Product>
     <Authors>tacitfirefox</Authors>
     <Copyright>Copyright (c) 2021</Copyright>
   </PropertyGroup>

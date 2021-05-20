@@ -1,1 +1,1 @@
-# content-catalog
+# content-catalogue
